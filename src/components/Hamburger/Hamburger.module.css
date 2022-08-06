@@ -1,0 +1,51 @@
+.Hamburger {
+  width: 35px;
+  height: 25px;
+  position: relative;
+}
+
+.bar {
+  border: solid 1px black;
+  width: 100%;
+  position: absolute;
+}
+
+.barMid {
+  top: 48%;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.barTop {
+  top: 0;
+  transition: top 0.4s, transform 0.5s;
+}
+
+.barBot {
+  bottom: 0;
+  transition: bottom 0.4s, transform 0.5s;
+}
+
+/* .barTop:hover {
+  transform: rotate(40deg);
+  top: 50%;
+}
+
+.barBot:hover {
+  transform: rotate(-40deg);
+  bottom: 41%;
+} */
+
+.barMid_close {
+  opacity: 0;
+}
+
+.barTop_close {
+  transform: rotate(40deg);
+  top: 50%;
+}
+
+.barBot_close {
+  transform: rotate(-40deg);
+  bottom: 41%;
+}
