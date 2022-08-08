@@ -9,7 +9,6 @@ const Hamburger = () => {
 
   const openMenu = (e) => {
     const target = e.target.closest(".hamMenu");
-    // console.log(target);
     setOpen(!open);
 
     if (open) {
