@@ -4,6 +4,12 @@
   position: relative;
 }
 
+@media only screen and (min-width: 550px) {
+  .Hamburger {
+    display: none;
+  }
+}
+
 .bar {
   border: solid 1px black;
   width: 100%;

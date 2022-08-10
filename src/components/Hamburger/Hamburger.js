@@ -11,7 +11,7 @@ const Hamburger = () => {
     const target = e.target.closest(".hamMenu");
     setOpen(!open);
 
-    if (open) {
+    if (!open) {
       target.children[0].classList = `${styles.bar} ${styles.barTop} ${styles.barTop_close}`;
       target.children[1].classList = `${styles.bar} ${styles.barMid} ${styles.barMid_close}`;
       target.children[2].classList = `${styles.bar} ${styles.barBot} ${styles.barBot_close}`;

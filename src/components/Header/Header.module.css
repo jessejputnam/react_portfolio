@@ -1,7 +1,47 @@
+.Header {
+  width: 100vw;
+  position: fixed;
+  background-color: #fffbf6da;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
 header {
-  height: 100px;
-  padding: 10px 50px;
+  max-width: 1150px;
+  height: 75px;
+  padding: 10px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+}
+
+.socials {
+  display: flex;
+  column-gap: 15px;
+}
+
+.social_img {
+  transition: filter 0.7s, transform 0.7s;
+}
+
+@media (hover: hover) {
+  .social_img:hover {
+    filter: hue-rotate(120deg);
+    transform: scale(1.1);
+  }
+}
+
+.desktop_nav {
+  width: 40%;
+  min-width: 275px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 549px) {
+  .desktop_nav {
+    display: none;
+  }
 }

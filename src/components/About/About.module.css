@@ -1,0 +1,48 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.about_text {
+  text-align: justify;
+}
+
+.skills_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (min-width: 550px) {
+  .About {
+    padding: 0 3vw;
+  }
+
+  .about_text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 815px) {
+  hr {
+    display: none;
+  }
+
+  .About {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+  }
+
+  .about_text {
+    width: 50%;
+    font-size: 20px;
+  }
+
+  .skills_container {
+    width: 40%;
+  }
+}

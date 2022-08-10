@@ -1,0 +1,30 @@
+.Skill {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.Skill > p {
+  font-size: 0.9rem;
+}
+
+.image {
+  height: 50px;
+}
+
+@media only screen and (min-width: 550px) {
+  .Skill {
+    height: 150px;
+    width: 100px;
+  }
+
+  .Skill > p {
+    margin-top: 25px;
+  }
+
+  .image {
+    transform: scale(1.5);
+  }
+}
