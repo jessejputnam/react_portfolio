@@ -1,7 +1,8 @@
 .Header {
   width: 100vw;
   position: fixed;
-  background-color: #fffbf6da;
+  background-color: #f3efead7;
+  /* background-color: #fffbf6da; */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 10;
@@ -23,7 +24,7 @@ header {
 }
 
 .social_img {
-  transition: filter 0.7s, transform 0.7s;
+  transition: filter 0.5s, transform 0.5s;
 }
 
 @media (hover: hover) {

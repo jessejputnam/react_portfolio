@@ -1,5 +1,6 @@
 // Import React Tools
-// import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 // Import Components
 import Hamburger from "../Hamburger/Hamburger";
@@ -12,7 +13,30 @@ import linkedin from "../../images/icons/links/linkedin.png";
 // Import CSS
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = (props) => {
+  const [curPage, setCurPage] = useState("/");
+  const location = useLocation().pathname;
+  const navigate = useNavigate();
+
+  const btns = document.getElementsByTagName("button");
+
+  const handleNav = (childData) => {
+    navigate(childData);
+  };
+
+  const toggleMenu = (childData) => {
+    props.toggleMenu(childData);
+  };
+
+  useEffect(() => {
+    setCurPage(location);
+    Array.from(btns).forEach((btn) =>
+      btn.id === location
+        ? btn.classList.add("current_page")
+        : btn.classList.remove("current_page")
+    );
+  }, [location, btns]);
+
   return (
     <div className={styles.Header}>
       <header>
@@ -33,12 +57,22 @@ const Header = () => {
           </a>
         </div>
         <nav className={styles.desktop_nav}>
-          <button>About</button>
-          <button>Projects</button>
-          <button>Contact</button>
+          <button
+            onClick={() => navigate("/")}
+            className={styles.current_page}
+            id='/'
+          >
+            Home
+          </button>
+          <button onClick={() => navigate("/projects")} id='/projects'>
+            Projects
+          </button>
+          <button onClick={() => navigate("contact")} id='/contact'>
+            Contact
+          </button>
         </nav>
-        {<Hamburger />}
-        {<NavMenu />}
+        {<Hamburger menuIsOpen={toggleMenu} />}
+        {<NavMenu menuIsOpen={props.mobileMenuOpen} />}
       </header>
     </div>
   );

@@ -4,12 +4,14 @@ import { useState } from "react";
 // Import CSS
 import styles from "./Hamburger.module.css";
 
-const Hamburger = () => {
+const Hamburger = (props) => {
   const [open, setOpen] = useState(false);
 
   const openMenu = (e) => {
     const target = e.target.closest(".hamMenu");
-    setOpen(!open);
+    const newValue = !open;
+    setOpen(newValue);
+    props.menuIsOpen(newValue);
 
     if (!open) {
       target.children[0].classList = `${styles.bar} ${styles.barTop} ${styles.barTop_close}`;

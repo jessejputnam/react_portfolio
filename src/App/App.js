@@ -1,8 +1,10 @@
 // Import React Tools
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Import Components
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 // Import Pages
 import Home from "../pages/Home/Home";
@@ -13,16 +15,26 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import styles from "./App.module.css";
 
 const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggleMenu = (childData) => {
+    setIsMenuOpen(childData);
+  };
+
   return (
     <BrowserRouter>
       <div className={styles.App}>
-        <Header />
+        <Header toggleMenu={handleToggleMenu} mobileMenuOpen={isMenuOpen} />
         <div className={styles.pages_wrapper}>
           <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route path='*' element={<PageNotFound />} />
+            <Route exact path='/' element={<Home menuIsOpen={isMenuOpen} />} />
+            <Route
+              path='*'
+              element={<PageNotFound menuIsOpen={isMenuOpen} />}
+            />
           </Routes>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

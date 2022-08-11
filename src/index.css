@@ -340,6 +340,19 @@ template {
   font-family: "Public Sans", sans-serif;
 }
 
+body {
+  /* background-color: white; */
+  background-color: #fffbf6;
+}
+
+a {
+  cursor: default;
+}
+
+a:visited {
+  color: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -369,15 +382,12 @@ button {
   font-family: "Alegreya Sans SC", system-ui;
 }
 
-body {
-  background-color: #fffbf6;
-}
-
 button {
   background: none;
   border: none;
   font-size: 1.3rem;
-  transition: letter-spacing 0.5s, color 0.5s;
+  transition: letter-spacing 0.5s, color 0.5s, font-weight 0.5s,
+    text-shadow 0.5s;
 }
 
 @media (hover: hover) {
@@ -394,4 +404,22 @@ hr {
   border-color: rgba(241, 241, 241, 0.125);
   box-shadow: 0 0 3px 0px rgba(55, 55, 55, 0.353);
   margin-bottom: 10px;
+}
+
+.current_page {
+  color: rgb(228, 237, 255);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.766);
+  font-weight: bold;
+}
+
+.open_menu {
+  height: 100vh !important;
+}
+
+.open_nav_menu {
+  height: 250px !important;
+}
+
+.blur {
+  filter: blur(2px);
 }

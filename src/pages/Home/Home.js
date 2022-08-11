@@ -5,11 +5,20 @@ import About from "../../components/About/About";
 // Import CSS
 import styles from "./Home.module.css";
 
-const Home = () => {
+const Home = function (props) {
+  const homeStyles = props.menuIsOpen ? `${styles.Home} blur` : styles.Home;
+
+  const test = () => {
+    console.log(props);
+  };
+  // if (props.menuIsOpen) {
+  // }
+
   return (
-    <div className={styles.Home}>
+    <div id='Home' className={homeStyles}>
       <Hero />
       <About />
+      <button onClick={test}>Check</button>
     </div>
   );
 };
