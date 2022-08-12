@@ -32,16 +32,6 @@
   transition: bottom 0.4s, transform 0.5s;
 }
 
-/* .barTop:hover {
-  transform: rotate(40deg);
-  top: 50%;
-}
-
-.barBot:hover {
-  transform: rotate(-40deg);
-  bottom: 41%;
-} */
-
 .barMid_close {
   opacity: 0;
 }

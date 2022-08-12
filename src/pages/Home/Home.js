@@ -11,8 +11,6 @@ const Home = function (props) {
   const test = () => {
     console.log(props);
   };
-  // if (props.menuIsOpen) {
-  // }
 
   return (
     <div id='Home' className={homeStyles}>

@@ -14,14 +14,15 @@ import linkedin from "../../images/icons/links/linkedin.png";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
-  const [curPage, setCurPage] = useState("/");
+  // const [curPage, setCurPage] = useState("/");
   const location = useLocation().pathname;
   const navigate = useNavigate();
 
   const btns = document.getElementsByTagName("button");
 
-  const handleNav = (childData) => {
-    navigate(childData);
+  const handleMobileNav = (childData) => {
+    navigate(childData.nav);
+    props.toggleMenu(childData.menu);
   };
 
   const toggleMenu = (childData) => {
@@ -29,7 +30,6 @@ const Header = (props) => {
   };
 
   useEffect(() => {
-    setCurPage(location);
     Array.from(btns).forEach((btn) =>
       btn.id === location
         ? btn.classList.add("current_page")
@@ -67,12 +67,17 @@ const Header = (props) => {
           <button onClick={() => navigate("/projects")} id='/projects'>
             Projects
           </button>
-          <button onClick={() => navigate("contact")} id='/contact'>
+          <button onClick={() => navigate("/contact")} id='/contact'>
             Contact
           </button>
         </nav>
-        {<Hamburger menuIsOpen={toggleMenu} />}
-        {<NavMenu menuIsOpen={props.mobileMenuOpen} />}
+        {<Hamburger menuIsOpen={props.menuIsOpen} toggleMenu={toggleMenu} />}
+        {
+          <NavMenu
+            menuIsOpen={props.mobileMenuOpen}
+            handleMobileNav={handleMobileNav}
+          />
+        }
       </header>
     </div>
   );

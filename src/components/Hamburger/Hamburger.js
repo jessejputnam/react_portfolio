@@ -1,34 +1,41 @@
-// Import React Tools
-import { useState } from "react";
-
 // Import CSS
 import styles from "./Hamburger.module.css";
 
 const Hamburger = (props) => {
-  const [open, setOpen] = useState(false);
+  const open = props.menuIsOpen;
 
-  const openMenu = (e) => {
-    const target = e.target.closest(".hamMenu");
+  let barTop, barMid, barBot;
+
+  if (open) {
+    barTop = `${styles.bar} ${styles.barTop} ${styles.barTop_close}`;
+    barMid = `${styles.bar} ${styles.barMid} ${styles.barMid_close}`;
+    barBot = `${styles.bar} ${styles.barBot} ${styles.barBot_close}`;
+  } else {
+    barTop = `${styles.bar} ${styles.barTop}`;
+    barMid = `${styles.bar} ${styles.barMid}`;
+    barBot = `${styles.bar} ${styles.barBot}`;
+  }
+
+  const openMenu = () => {
     const newValue = !open;
-    setOpen(newValue);
-    props.menuIsOpen(newValue);
+    props.toggleMenu(newValue);
 
     if (!open) {
-      target.children[0].classList = `${styles.bar} ${styles.barTop} ${styles.barTop_close}`;
-      target.children[1].classList = `${styles.bar} ${styles.barMid} ${styles.barMid_close}`;
-      target.children[2].classList = `${styles.bar} ${styles.barBot} ${styles.barBot_close}`;
+      barTop = `${styles.bar} ${styles.barTop} ${styles.barTop_close}`;
+      barMid = `${styles.bar} ${styles.barMid} ${styles.barMid_close}`;
+      barBot = `${styles.bar} ${styles.barBot} ${styles.barBot_close}`;
     } else {
-      target.children[0].classList = `${styles.bar} ${styles.barTop}`;
-      target.children[1].classList = `${styles.bar} ${styles.barMid}`;
-      target.children[2].classList = `${styles.bar} ${styles.barBot}`;
+      barTop = `${styles.bar} ${styles.barTop}`;
+      barMid = `${styles.bar} ${styles.barMid}`;
+      barBot = `${styles.bar} ${styles.barBot}`;
     }
   };
 
   return (
     <div onClick={openMenu} className={`hamMenu ${styles.Hamburger}`}>
-      <div className={`${styles.bar} ${styles.barTop}`}></div>
-      <div className={`${styles.bar} ${styles.barMid}`}></div>
-      <div className={`${styles.bar} ${styles.barBot}`}></div>
+      <div className={barTop}></div>
+      <div className={barMid}></div>
+      <div className={barBot}></div>
     </div>
   );
 };

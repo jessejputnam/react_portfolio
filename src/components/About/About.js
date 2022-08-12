@@ -15,7 +15,7 @@ const langs = importImgFolder(
 const About = () => {
   return (
     <section className={styles.About}>
-      <hr />
+      <hr className={styles.hr} />
       <p className={styles.about_text}>
         I’m an aspiring junior front-end developer transitioning careers. I am
         self-driven and independent, learning to code on my own through
@@ -32,7 +32,7 @@ const About = () => {
         <Skill skillImg={langs.mongodb} skillName='MongoDB' />
         <Skill skillImg={langs.firebase} skillName='Firebase' />
       </div>
-      <hr />
+      <hr className={styles.hr} />
     </section>
   );
 };

@@ -8,7 +8,7 @@ import Footer from "../components/Footer/Footer";
 
 // Import Pages
 import Home from "../pages/Home/Home";
-
+import Projects from "../pages/Projects/Projects";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 
 // Import CSS
@@ -24,10 +24,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className={styles.App}>
-        <Header toggleMenu={handleToggleMenu} mobileMenuOpen={isMenuOpen} />
+        <Header
+          toggleMenu={handleToggleMenu}
+          mobileMenuOpen={isMenuOpen}
+          menuIsOpen={isMenuOpen}
+        />
         <div className={styles.pages_wrapper}>
           <Routes>
             <Route exact path='/' element={<Home menuIsOpen={isMenuOpen} />} />
+            <Route exact path='/projects' element={<Projects />} />
             <Route
               path='*'
               element={<PageNotFound menuIsOpen={isMenuOpen} />}
