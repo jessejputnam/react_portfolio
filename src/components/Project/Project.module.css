@@ -7,7 +7,15 @@
 
 .project_img_container {
   box-shadow: 0 0 5px 1px gray;
-  background-color: rgba(0, 0, 0, 0.417);
+  background: linear-gradient(
+    to bottom right,
+    gray,
+    darkgray,
+    silver,
+    silver,
+    white,
+    gray
+  );
 }
 
 .project_img {
@@ -23,7 +31,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* align-items: center; */
   row-gap: 20px;
+}
+
+.project_info > h2 {
+  text-align: center;
+  font-family: "Ibarra Real Nova";
+}
+
+.btns_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vw;
 }
 
 @media only screen and (min-width: 750px) {
@@ -39,6 +59,10 @@
   .project_img {
     object-fit: cover;
     height: clamp(300px, 30vw, 450px);
+  }
+
+  .project_info > h2 {
+    font-size: 48px;
   }
 
   .reverse {

@@ -3,7 +3,6 @@ import styles from "./NavMenu.module.css";
 
 const NavMenu = (props) => {
   const getNav = (e) => {
-    console.log(e.target.id);
     props.handleMobileNav({
       nav: e.target.id,
       menu: false

@@ -18,7 +18,18 @@ const Project = (props) => {
         <hr />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
-        <button type='button'>VIEW PROJECT</button>
+        <div className={styles.btns_container}>
+          <a
+            href={props.liveSiteLink}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            <button type='button'>LIVE SITE</button>
+          </a>
+          <a href={props.codeLink} target='_blank' rel='noreferrer noopener'>
+            <button type='button'>CODE</button>
+          </a>
+        </div>
         <hr />
       </div>
     </div>
