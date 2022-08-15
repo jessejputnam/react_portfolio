@@ -25,9 +25,13 @@ const desc7 =
 const desc8 =
   "A responsive ToDo app that stores data in LocalStorage. The app allows users to create multiple lists each containing multiple task items. Task items can be marked according to priority/completed status. Tasks can be added, edited, and deleted, and sorted";
 
-const Projects = () => {
+const Projects = (props) => {
+  const projectsStyles = props.menuIsOpen
+    ? `${styles.Projects} blur`
+    : styles.Projects;
+
   return (
-    <div className={styles.Projects}>
+    <div className={projectsStyles}>
       {
         <Project
           reverse={false}

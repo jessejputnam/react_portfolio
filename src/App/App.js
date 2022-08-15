@@ -32,7 +32,11 @@ const App = () => {
         <div className={styles.pages_wrapper}>
           <Routes>
             <Route exact path='/' element={<Home menuIsOpen={isMenuOpen} />} />
-            <Route exact path='/projects' element={<Projects />} />
+            <Route
+              exact
+              path='/projects'
+              element={<Projects menuIsOpen={isMenuOpen} />}
+            />
             <Route
               path='*'
               element={<PageNotFound menuIsOpen={isMenuOpen} />}
