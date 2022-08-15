@@ -1,6 +1,7 @@
 // Import assets
 import github from "../../images/icons/links/github.png";
 import linkedin from "../../images/icons/links/linkedin.png";
+import mail from "../../images/icons/mail.svg";
 
 // Import CSS
 import styles from "./Footer.module.css";
@@ -26,10 +27,11 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles.contact}>
-          <ul>
-            <li>Email me:</li>
-            <li>jessejputnam@gmail.com</li>
-          </ul>
+          <a href='mailto:jessejputnam@gmail.com'>
+            <img src={mail} alt='Email' />
+          </a>
+
+          <a href='mailto:jessejputnam@gmail.com'>jessejputnam@gmail.com</a>
         </div>
       </footer>
     </div>

@@ -1,7 +1,9 @@
 .Header {
   width: 100vw;
   position: fixed;
-  background-color: #f3efead7;
+  /* background-color: #f3efead7; */
+  /* background-color: #f8f8ff; */
+  background-color: white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 10;

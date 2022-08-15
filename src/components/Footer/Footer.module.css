@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.353);
-  background-color: #f3efead7;
+  background-color: #0f4d5c99;
 }
 
 footer {
@@ -23,6 +23,7 @@ footer {
 }
 
 .social_img {
+  filter: hue-rotate(200deg);
   transition: filter 0.5s, transform 0.5s;
 }
 
@@ -31,4 +32,20 @@ footer {
     filter: hue-rotate(120deg);
     transform: scale(1.1);
   }
+}
+
+.contact {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 5px;
+}
+
+.contact > a > img {
+  height: 30px;
+  filter: hue-rotate(250deg);
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
 }
