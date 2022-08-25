@@ -22,6 +22,7 @@ function ContactForm() {
           type='email'
           name='email'
           placeholder='person@place.com'
+          required
         />
         <ValidationError prefix='Email' field='email' errors={state.errors} />
       </div>
@@ -33,6 +34,7 @@ function ContactForm() {
           id='message'
           name='message'
           placeholder='What can I help you with?'
+          required
         />
         <ValidationError
           prefix='Message'
