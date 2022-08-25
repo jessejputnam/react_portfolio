@@ -8,7 +8,7 @@ function ContactForm() {
   const [state, handleSubmit] = useForm("mrgjpkbl");
 
   if (state.succeeded) {
-    return <p>Thanks, message received!</p>;
+    return <p className={styles.succeeded_text}>Thanks, message received!</p>;
   }
 
   return (

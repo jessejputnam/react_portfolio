@@ -15,7 +15,6 @@
   border-radius: 5px;
   border: none;
   background-color: rgba(234, 234, 235, 0.646);
-  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.576); */
 }
 
 .message_input {
@@ -24,9 +23,12 @@
   padding: 15px;
   border: none;
   background-color: rgba(234, 234, 235, 0.646);
-  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.576); */
   resize: none;
   border-radius: 5px;
+}
+
+.succeeded_text {
+  padding: 20px 10px;
 }
 
 @media only screen and (min-width: 1000px) {
