@@ -9,7 +9,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.Footer}>
-      <footer>
+      <footer className={styles.footer}>
         <div className={styles.social_container}>
           <a
             href='https://github.com/jessejputnam'

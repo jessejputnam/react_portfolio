@@ -13,6 +13,7 @@ import PageNotFound from "../pages/PageNotFound/PageNotFound";
 
 // Import CSS
 import styles from "./App.module.css";
+import Contact from "../pages/Contact/Contact";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,6 +38,7 @@ const App = () => {
               path='/projects'
               element={<Projects menuIsOpen={isMenuOpen} />}
             />
+            <Route path='/contact' element={<Contact />} />
             <Route
               path='*'
               element={<PageNotFound menuIsOpen={isMenuOpen} />}

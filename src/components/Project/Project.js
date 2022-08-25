@@ -6,6 +6,9 @@ const Project = (props) => {
   const ProjectStyle = reverseRow
     ? `${styles.reverse} ${styles.Project}`
     : styles.Project;
+  const description = props.desc.map((point) => (
+    <li key={Math.random()}>{point}</li>
+  ));
 
   return (
     <div className={ProjectStyle}>
@@ -17,7 +20,7 @@ const Project = (props) => {
       <div className={`${styles.project_detail} ${styles.project_info}`}>
         <hr />
         <h2>{props.title}</h2>
-        <p>{props.desc}</p>
+        <ul className={styles.desc}>{description}</ul>
         <div className={styles.btns_container}>
           <a
             href={props.liveSiteLink}

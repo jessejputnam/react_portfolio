@@ -1,0 +1,36 @@
+.Contact {
+  /* padding: 50px 50px 0; */
+}
+
+.contact_divider {
+  width: 100%;
+}
+
+.section_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text_section {
+  padding: 20px 10px;
+  width: 100%;
+}
+.text_section > p {
+  margin-bottom: 25px;
+}
+
+.text_section p {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section_container {
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  .text_section {
+    width: 50%;
+  }
+}

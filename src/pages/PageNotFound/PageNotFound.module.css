@@ -1,0 +1,45 @@
+.PageNotFound {
+  min-height: 73.5vh;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 30px;
+}
+
+.letters_container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  gap: 5px;
+}
+
+.letters_container div {
+  font-family: "Rubik Maze", monospace;
+  font-size: 3rem;
+  height: clamp(50px, 10vw, 80px);
+  width: clamp(50px, 10vw, 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.673);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.532);
+  border-radius: 10px;
+  transition: transform 2s ease-out, background-color 1s ease-out,
+    color 1s ease-out;
+  cursor: default;
+}
+
+@media (hover: hover) {
+  .letters_container div:hover {
+    transform: rotateY(900deg);
+    background-color: rgba(44, 54, 132, 0.654);
+    color: white;
+  }
+}

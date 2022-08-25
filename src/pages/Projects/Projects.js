@@ -9,21 +9,57 @@ const imgs = importImgFolder(
   require.context("../../images/projects", false, /\.(png|jpe?g|svg)$/)
 );
 
-const desc1 =
-  "A responsive application that uses API calls to display local weather data, as well as allowing the user to search for weather data for any city in the world. I used webpack as a module bundler. APIs were used for the weather data.";
-const desc2 =
-  "A recreation of the classic boardgame Battleship for mobile and desktop users. Project was developed with a focus on Test Driven Development and isolating application functionality in a modular design pattern.";
-const desc3 = "A fake store front with shopping car modal functionality";
-const desc4 =
-  "A responsive clone of the popular word guessing game. I used CSS flexbox and animations to create a smooth gameplay experience. JavaScript is extensively used for game logic and interactivity through DOM manipulation, as well as for optional dark mode palette swap.";
-const desc5 =
-  "Built using React, this project gives the user an editable form that generates a professional-looking CV or resumé. I focused on effectively using state and props for passing data between components.";
-const desc6 =
-  "This project was to help a young cousin play Pokemon Go. The app uses JavaScript to make API calls to outside databases to obtain information for type effectiveness in the game.";
-const desc7 =
-  "This project required me to build a fully responsive landing page for a fake bank, working from a FIGMA design file. I created and organized the HTML and CSS, using flexbox for responsiveness and JavaScript for mobile menu interactivity.";
-const desc8 =
-  "A responsive ToDo app that stores data in LocalStorage. The app allows users to create multiple lists each containing multiple task items. Task items can be marked according to priority/completed status. Tasks can be added, edited, and deleted, and sorted";
+const desc1 = [
+  "JS, Webpack",
+  "‣ Responsive application that automatically checks local weather",
+  "‣ Uses OpenWeather for API calls to get weather data",
+  "‣ Users can search for any city in the world and get instant weather data",
+  "‣ Searches account for homonymous cities"
+];
+const desc2 = [
+  "JS, Jest, Webpack",
+  "‣ Responsive recreation of classic boardgame Battleship: player vs computer",
+  "‣ Focus on test-driven development using Jest",
+  "‣ Players set ship position and play against computer"
+];
+const desc3 = [
+  "React, ReactRouter, Jest",
+  "‣ Responsive fake eCommerce site selling string instruments",
+  "‣ Shopping cart functionality -- add, delete, and update total price -- from selection pages of inventory items",
+  "‣ Cart live updates price and selected items"
+];
+const desc4 = [
+  "JS, CSS, HTML",
+  "‣ A responsive clone of the popular word guessing game, Wordle",
+  "‣ Used flexbox and animations to create a smooth gameplay experience",
+  "‣ Toggle dark mode palette swap",
+  "‣ Focus on vanilla JavaScript DOM manipulation"
+];
+const desc5 = [
+  "React, Flexbox, Webpack",
+  "‣ A responsive CV / résumé generator",
+  "‣ Users can input their information and the generator will automatically format the information presentably",
+  "‣ Form elements live update as user types by tying onChange to state in React components",
+  "‣ Users can edit/delete information after submission",
+  "‣ Users can hide edit buttons for printable look"
+];
+const desc6 = [
+  "JS, Flexbox, API",
+  "‣ A PokémonGo helper app that allows users to input opponent Pokemon names and ascertain effective offensive types as well as suggested Pokémon to use against opponent",
+  "‣ Focus on promises, asynchronous JS, and API calls"
+];
+const desc7 = [
+  "JS, CSS, HTML",
+  "‣ Fully responsive landing page for a fake bank",
+  "‣ Semantic HTML for structure, responsive CSS for variable viewing size, and light JavaScript for simple menu interactivity"
+];
+const desc8 = [
+  "JS, Webpack, API, Local Storage",
+  "‣ A classic CRUD todo app",
+  "‣ Users can add/edit/delete tasks as well as lists of tasks",
+  "‣ Tasks are tracked by date if date is provided, complete with live updates according to temporal proximity",
+  "‣ Uses Local Storage to persist user data in the browser"
+];
 
 const Projects = (props) => {
   const projectsStyles = props.menuIsOpen
