@@ -9,12 +9,17 @@
   box-shadow: 0 0 5px 1px gray;
   background: linear-gradient(
     to bottom right,
-    #184e77ab,
+    #f6f7d5af,
+    #b293739b,
+    #a442008c,
+    #69140e9a,
+    #3c15188d
+      /* #184e77ab,
     #1a759fa6,
     #34a0a4a5,
     #76c893a7,
     #b5e48ca7,
-    #d9ed92a9
+    #d9ed92a9 */
   );
 }
 
