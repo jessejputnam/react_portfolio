@@ -58,16 +58,22 @@ const Header = (props) => {
         </div>
         <nav className={styles.desktop_nav}>
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/react_portfolio/")}
             className={styles.current_page}
             id='/'
           >
             Home
           </button>
-          <button onClick={() => navigate("/projects")} id='/projects'>
+          <button
+            onClick={() => navigate("/react_portfolio/projects")}
+            id='/projects'
+          >
             Projects
           </button>
-          <button onClick={() => navigate("/contact")} id='/contact'>
+          <button
+            onClick={() => navigate("/react_portfolio/contact")}
+            id='/contact'
+          >
             Contact
           </button>
         </nav>
