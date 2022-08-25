@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.f2cada74.css",
+    "main.js": "/react_portfolio/static/js/main.b28b2b2f.js",
+    "static/media/weather.png": "/react_portfolio/static/media/weather.6be545529e023f5892e2.png",
+    "static/media/pokemon.png": "/react_portfolio/static/media/pokemon.13e409f159dbec31f1fa.png",
+    "static/media/todo.png": "/react_portfolio/static/media/todo.cf2dc2383a62d32c6d30.png",
+    "static/media/landing.png": "/react_portfolio/static/media/landing.0ff017a83a953e52c3da.png",
+    "static/media/welcome_table.jpeg": "/react_portfolio/static/media/welcome_table.affada641d8475ac39aa.jpeg",
+    "static/media/cart.png": "/react_portfolio/static/media/cart.0b7b1cdb00ab44035909.png",
+    "static/media/wordle.png": "/react_portfolio/static/media/wordle.abe5d6dbe97f5c68153d.png",
+    "static/media/mongodb.png": "/react_portfolio/static/media/mongodb.dd552a55b534b0083148.png",
+    "static/media/battleship.jpeg": "/react_portfolio/static/media/battleship.08e1e4596c6eb2e9c506.jpeg",
+    "static/media/cv.jpeg": "/react_portfolio/static/media/cv.2aa14d14aff69288ab19.jpeg",
+    "static/media/react.png": "/react_portfolio/static/media/react.64b81292addf78a758a9.png",
+    "static/media/firebase.png": "/react_portfolio/static/media/firebase.622634e50e42373dfc19.png",
+    "static/media/js.svg": "/react_portfolio/static/media/js.2dbde6137d0349e2914d.svg",
+    "index.html": "/react_portfolio/index.html",
+    "static/media/css.svg": "/react_portfolio/static/media/css.c58bb544defe14169b86.svg",
+    "static/media/html.svg": "/react_portfolio/static/media/html.833623553c8905fc875c.svg",
+    "static/media/mail.svg": "/react_portfolio/static/media/mail.7c23435981ce37c47b9b9a26d6978f65.svg",
+    "main.f2cada74.css.map": "/react_portfolio/static/css/main.f2cada74.css.map",
+    "main.b28b2b2f.js.map": "/react_portfolio/static/js/main.b28b2b2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2cada74.css",
+    "static/js/main.b28b2b2f.js"
+  ]
+}
