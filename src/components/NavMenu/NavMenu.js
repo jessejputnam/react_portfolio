@@ -4,7 +4,7 @@ import styles from "./NavMenu.module.css";
 const NavMenu = (props) => {
   const getNav = (e) => {
     props.handleMobileNav({
-      nav: e.target.id,
+      nav: `/react_portfolio${e.target.id}`,
       menu: false
     });
   };
