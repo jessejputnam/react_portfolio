@@ -14,7 +14,7 @@ const desc1 = [
   "‣ Responsive application that automatically checks local weather",
   "‣ Uses OpenWeather for API calls to get weather data",
   "‣ Users can search for any city in the world and get instant weather data",
-  "‣ Searches account for homonymous cities"
+  "‣ Searches can manage homonymous cities"
 ];
 const desc2 = [
   "JS, Jest, Webpack",

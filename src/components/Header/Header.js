@@ -1,5 +1,5 @@
 // Import React Tools
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 // Import Components
@@ -7,8 +7,8 @@ import Hamburger from "../Hamburger/Hamburger";
 import NavMenu from "../NavMenu/NavMenu";
 
 // Import assets
-import github from "../../images/icons/links/github.png";
-import linkedin from "../../images/icons/links/linkedin.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // Import CSS
 import styles from "./Header.module.css";
@@ -46,14 +46,22 @@ const Header = (props) => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className={styles.social_img} src={github} alt='Github' />
+            <FontAwesomeIcon
+              icon={faGithub}
+              size='2x'
+              className={styles.social_img}
+            />
           </a>
           <a
             href='https://www.linkedin.com/in/jesse-putnam-53830622a/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className={styles.social_img} src={linkedin} alt='LinkedIn' />
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size='2x'
+              className={styles.social_img}
+            />
           </a>
         </div>
         <nav className={styles.desktop_nav}>

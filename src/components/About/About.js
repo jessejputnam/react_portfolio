@@ -27,9 +27,8 @@ const About = () => {
 
         <p className={styles.about_text}>
           I am proficient in Vanilla JavaScript (ES6+, as well as ES5), React,
-          responsive CSS3, semantic HTML5. I am currently learning and working
-          with the backend service, Firebase, and NodeJS through MongoDB and
-          Express.
+          responsive CSS3, and semantic HTML5. I am currently learning backend
+          tools and frameworks such as Firebase, Node.js, Express, and MongoDB.
         </p>
       </div>
       <div className={styles.skills_container}>

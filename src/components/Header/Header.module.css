@@ -1,8 +1,6 @@
 .Header {
   width: 100vw;
   position: fixed;
-  /* background-color: #f3efead7; */
-  /* background-color: #f8f8ff; */
   background-color: white;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -21,17 +19,21 @@ header {
 
 .socials {
   display: flex;
-  column-gap: 15px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  width: 25vw;
+  max-width: 150px;
 }
 
 .social_img {
-  transition: filter 0.5s, transform 0.5s;
+  transition: color 0.8s, font-size 0.3s;
 }
 
 @media (hover: hover) {
   .social_img:hover {
-    filter: hue-rotate(120deg);
-    transform: scale(1.1);
+    color: #e76f51;
+    font-size: 2.4rem;
   }
 }
 
@@ -39,7 +41,7 @@ header {
   width: 40%;
   min-width: 275px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 549px) {
