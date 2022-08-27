@@ -7,15 +7,10 @@
 
 .project_img_container {
   box-shadow: 0 0 5px 1px gray;
-  background: linear-gradient(
-    to bottom right,
-    #f58a5ca1,
-    #f69c72a1,
-    #f6ad88a1,
-    #f7bf9ea1,
-    #f8d2b4a1,
-    #f8e3caa1,
-    #f9f5e0a1
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8b472e83,
+    #f5986db7 20%
   );
 }
 
