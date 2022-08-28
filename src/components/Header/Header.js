@@ -14,7 +14,6 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
-  // const [curPage, setCurPage] = useState("/");
   const location = useLocation().pathname;
   const navigate = useNavigate();
 
@@ -23,6 +22,20 @@ const Header = (props) => {
   const handleMobileNav = (childData) => {
     navigate(childData.nav);
     props.toggleMenu(childData.menu);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const goToPage = (e) => {
+    navigate(`/react_portfolio${e.target.id}`);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
   };
 
   const toggleMenu = (childData) => {
@@ -65,23 +78,13 @@ const Header = (props) => {
           </a>
         </div>
         <nav className={styles.desktop_nav}>
-          <button
-            onClick={() => navigate("/react_portfolio/")}
-            className={styles.current_page}
-            id='/'
-          >
+          <button onClick={goToPage} className={styles.current_page} id='/'>
             Home
           </button>
-          <button
-            onClick={() => navigate("/react_portfolio/projects")}
-            id='/projects'
-          >
+          <button onClick={goToPage} id='/projects'>
             Projects
           </button>
-          <button
-            onClick={() => navigate("/react_portfolio/contact")}
-            id='/contact'
-          >
+          <button onClick={goToPage} id='/contact'>
             Contact
           </button>
         </nav>
