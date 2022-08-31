@@ -36,7 +36,8 @@ const About = () => {
         <Skill skillImg={langs.css} skillName='CSS3' />
         <Skill skillImg={langs.js} skillName='JavaScript' />
         <Skill skillImg={langs.react} skillName='React' />
-        <Skill skillImg={langs.node} skillName='NodeJS' />
+        <Skill skillImg={langs.node} skillName='Node' />
+        <Skill skillImg={langs.express} skillName='Express' />
         <Skill skillImg={langs.mongodb} skillName='MongoDB' />
         <Skill skillImg={langs.firebase} skillName='Firebase' />
       </div>
