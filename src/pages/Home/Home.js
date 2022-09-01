@@ -1,6 +1,7 @@
 // Import Components
 import Hero from "../../components/Hero/Hero";
 import Projects from "../Projects/Projects";
+import Statement from "../../components/Statement/Statement";
 // import About from "../../components/About/About";
 
 // Import CSS
@@ -12,6 +13,7 @@ const Home = function (props) {
   return (
     <div id='Home' className={homeStyles}>
       <Hero />
+      <Statement />
       <Projects />
       {/* <About /> */}
     </div>

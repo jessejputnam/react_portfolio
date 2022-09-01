@@ -1,5 +1,5 @@
 .Skill {
-  width: 80px;
+  /* width: 80px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,16 +12,18 @@
 }
 
 .image {
-  height: 50px;
+  /* height: 50px; */
+  height: 30px;
 }
 
 @media only screen and (min-width: 550px) {
   .Skill {
-    height: 150px;
+    /* height: 150px; */
     width: 120px;
   }
 
   .image {
-    height: 80px;
+    /* height: 80px; */
+    height: 30px;
   }
 }

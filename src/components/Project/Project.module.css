@@ -7,10 +7,74 @@
 
 .project_img_container {
   box-shadow: 0 0 5px 1px gray;
-  background-image: repeating-radial-gradient(
+  /* background-image: repeating-radial-gradient(
     circle at bottom right,
     #8d83806b,
     #dacac2b7 30%
+  ); */
+}
+
+.varA {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #808b8d6b,
+    #c2c8dab7 30%
+  );
+}
+
+.varB {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8d80806b,
+    #c2d6dab7 30%
+  );
+}
+
+.varC {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8d8c806b,
+    #dac2c2b7 30%
+  );
+}
+
+.varD {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8d89806b,
+    #c2dac6b7 30%
+  );
+}
+
+.varE {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #88808d6b,
+    #d4c2dab7 30%
+  );
+}
+
+.varF {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8d808d6b,
+    #dad3c2b7 30%
+  );
+}
+
+.varG {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #808d806b,
+    #c3dac2b7 30%
+  );
+}
+
+.varH {
+  background-image: repeating-radial-gradient(
+    circle at bottom right,
+    #8d87806b,
+    #dadac2b7 30%
   );
 }
 
@@ -21,6 +85,7 @@
   position: relative;
   top: 20px;
   margin: 0 auto;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.567);
 }
 
 .project_info {

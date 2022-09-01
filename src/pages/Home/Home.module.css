@@ -1,3 +1,4 @@
 .Home {
+  max-width: 89vw;
   transition: filter 0.5s;
 }

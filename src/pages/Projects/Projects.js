@@ -70,6 +70,7 @@ const Projects = (props) => {
     <div className={projectsStyles}>
       {
         <Project
+          styleVar='a'
           reverse={false}
           src={imgs.weather}
           alt='Weather App'
@@ -81,6 +82,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='b'
           reverse={true}
           src={imgs.battleship}
           alt='Battleship'
@@ -92,6 +94,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='c'
           reverse={false}
           src={imgs.cart}
           alt='React Shopping Cart'
@@ -103,6 +106,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='d'
           reverse={true}
           src={imgs.wordle}
           alt='Wordle Clone'
@@ -114,6 +118,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='e'
           reverse={false}
           src={imgs.cv}
           alt='CV Generator'
@@ -125,6 +130,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='f'
           reverse={true}
           src={imgs.pokemon}
           alt='Pokemon App'
@@ -136,6 +142,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='g'
           reverse={false}
           src={imgs.landing}
           alt='Landing Page'
@@ -147,6 +154,7 @@ const Projects = (props) => {
       }
       {
         <Project
+          styleVar='h'
           reverse={true}
           src={imgs.todo}
           alt='Todo App'
