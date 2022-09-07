@@ -8,12 +8,12 @@ import Footer from "../components/Footer/Footer";
 
 // Import Pages
 import Home from "../pages/Home/Home";
-import Projects from "../pages/Projects/Projects";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
 
 // Import CSS
 import styles from "./App.module.css";
 import Contact from "../pages/Contact/Contact";
+import Resume from "../pages/Resume/Resume";
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,11 +37,7 @@ const App = () => {
               path='/react_portfolio'
               element={<Home menuIsOpen={isMenuOpen} />}
             />
-            <Route
-              exact
-              path='/react_portfolio/projects'
-              element={<Projects menuIsOpen={isMenuOpen} />}
-            />
+            <Route path='/react_portfolio/resume' element={<Resume />} />
             <Route path='/react_portfolio/contact' element={<Contact />} />
             <Route
               path='*'

@@ -1,14 +1,27 @@
+// Import React tools
+import { useNavigate } from "react-router-dom";
+
 // Import assets
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import github from "../../images/icons/links/github.png";
-import linkedin from "../../images/icons/links/linkedin.png";
 import mail from "../../images/icons/mail.svg";
+import signature from "../../images/personal/signature.png";
 
 // Import CSS
 import styles from "./Footer.module.css";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const goToPage = (e) => {
+    navigate(`/react_portfolio${e.target.id}`);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className={styles.Footer}>
       <footer className={styles.footer}>
@@ -35,13 +48,22 @@ const Footer = () => {
               className={styles.social_img}
             />
           </a>
+          <img
+            onClick={goToPage}
+            className={styles.signature}
+            id='/easteregg'
+            src={signature}
+            alt='Signature'
+          />
         </div>
         <div className={styles.contact}>
           <a href='mailto:jessejputnam@gmail.com'>
-            <img src={mail} alt='Email' />
+            <img className={styles.mail} src={mail} alt='Email' />
           </a>
 
-          <a href='mailto:jessejputnam@gmail.com'>jessejputnam@gmail.com</a>
+          <a className={styles.email} href='mailto:jessejputnam@gmail.com'>
+            jessejputnam@gmail.com
+          </a>
         </div>
       </footer>
     </div>

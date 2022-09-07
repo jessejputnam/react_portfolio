@@ -18,11 +18,13 @@ const Statement = () => {
   return (
     <div className={styles.Statement}>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+        Web developer dedicated to building, maintaining, and expanding highly
+        usable, responsive websites and applications. Previously, I worked as a
+        Middle/High School teacher in English Language Arts for students
+        identified as Gifted &amp; Talented. Strong skills in building teams and
+        working collaboratively to deliver on team goals. Proficient in
+        communication on multiple levels to deliver complex content in
+        digestible units.
       </p>
       <div className={styles.marquee}>
         <div className={styles.skills_container}>

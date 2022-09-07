@@ -81,8 +81,8 @@ const Header = (props) => {
           <button onClick={goToPage} className={styles.current_page} id='/'>
             Home
           </button>
-          <button onClick={goToPage} id='/projects'>
-            Projects
+          <button onClick={goToPage} id='/resume'>
+            Resumé
           </button>
           <button onClick={goToPage} id='/contact'>
             Contact

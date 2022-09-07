@@ -1,12 +1,12 @@
 .Statement {
   width: 90%;
-  /* max-width: 800px; */
   margin: 0 auto;
 }
 
 .Statement > p {
+  max-width: 1200px;
   text-align: justify;
-  margin-bottom: 3vw;
+  margin: 0 auto 15px;
 }
 
 .marquee {
@@ -14,8 +14,7 @@
   overflow: hidden;
   user-select: none;
   gap: 10px;
-  margin-bottom: 3vw;
-  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .skills_container {

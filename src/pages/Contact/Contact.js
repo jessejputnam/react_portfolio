@@ -7,10 +7,16 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <div className={styles.Contact}>
-      <hr className={styles.contact_divider} />
       <section className={styles.section_container}>
         <h2>Get in Touch</h2>
         <div className={styles.text_section}>
+          <p>
+            I’m a front-end developer transitioning from high school teaching. I
+            am self-driven and independent, learning to code on my own through
+            documentation, challenges, textbooks, online courses, and projects.
+            I am currently based in Western MA, but I’m looking to relocate and
+            willing to work remotely as well.
+          </p>
           <p>
             If you are a recruiter or simply someone with an idea hoping to be
             made manifest, I’d love to hear about what you’re working on and how

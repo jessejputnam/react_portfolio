@@ -23,8 +23,8 @@ const NavMenu = (props) => {
         <button onClick={getNav} className={styles.current_page} id='/'>
           Home
         </button>
-        <button onClick={getNav} id='/projects'>
-          Projects
+        <button onClick={getNav} id='/resume'>
+          Resumé
         </button>
         <button onClick={getNav} id='/contact'>
           Contact

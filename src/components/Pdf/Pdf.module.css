@@ -1,0 +1,42 @@
+.Pdf {
+  margin-top: 100px;
+  overflow-x: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+}
+
+.resumePdf {
+  width: 720px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.44);
+}
+
+.pdfNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navBtns {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download_container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 690px) {
+  .resumePdf {
+    display: none;
+  }
+
+  .pdfNav {
+    display: none;
+  }
+}

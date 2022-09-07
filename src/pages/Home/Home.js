@@ -1,8 +1,7 @@
 // Import Components
 import Hero from "../../components/Hero/Hero";
-import Projects from "../Projects/Projects";
+import Projects from "../../components/Projects/Projects";
 import Statement from "../../components/Statement/Statement";
-// import About from "../../components/About/About";
 
 // Import CSS
 import styles from "./Home.module.css";
