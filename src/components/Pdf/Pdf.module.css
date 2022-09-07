@@ -9,7 +9,7 @@
 }
 
 .resumePdf {
-  width: 720px;
+  width: 850px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.44);
 }
 
@@ -29,6 +29,11 @@
   margin-top: 25px;
   display: flex;
   flex-direction: column;
+  row-gap: 100px;
+}
+
+.pageBtn {
+  color: rgba(182, 182, 182, 0.694);
 }
 
 @media only screen and (max-width: 690px) {
@@ -39,4 +44,17 @@
   .pdfNav {
     display: none;
   }
+}
+
+@media only screen and (min-width: 691px) {
+  .readmeIcon {
+    display: none;
+  }
+}
+
+.pageBtn:hover {
+  letter-spacing: normal;
+  color: rgba(182, 182, 182, 0.694);
+  text-shadow: none;
+  text-decoration: line-through;
 }

@@ -43,17 +43,23 @@ const Pdf = (props) => {
         onLoadSuccess={onDocumentLoadSuccess}
         renderMode='canvas'
       >
-        <Page scale={1.3} pageNumber={pageNum} />
+        <Page scale={1.5} pageNumber={pageNum} />
       </Document>
       <div className={styles.pdfNav}>
         <p>
           Page {pageNum || (numPages ? 1 : "--")} of {numPages || "--"}
         </p>
         <div className={styles.navBtns}>
-          <button type='button' disabled={pageNum <= 1} onClick={previousPage}>
+          <button
+            className={styles.pageBtn}
+            type='button'
+            disabled={pageNum <= 1}
+            onClick={previousPage}
+          >
             Previous
           </button>
           <button
+            className={styles.pageBtn}
             type='button'
             disabled={pageNum >= numPages}
             onClick={nextPage}
@@ -68,7 +74,14 @@ const Pdf = (props) => {
           <button>View Resume</button>
         </a>
 
-        <FontAwesomeIcon icon={faReadme} size='8x' />
+        <a
+          className={styles.readmeIcon}
+          href={pdf}
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FontAwesomeIcon icon={faReadme} size='8x' />
+        </a>
       </div>
     </div>
   );
