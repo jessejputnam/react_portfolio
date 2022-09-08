@@ -1,4 +1,5 @@
 .Home {
+  margin-top: 75px;
   max-width: 89vw;
   transition: filter 0.5s;
 }

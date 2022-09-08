@@ -7,11 +7,6 @@
 
 .project_img_container {
   box-shadow: 0 0 5px 1px gray;
-  /* background-image: repeating-radial-gradient(
-    circle at bottom right,
-    #8d83806b,
-    #dacac2b7 30%
-  ); */
 }
 
 .varA {
@@ -103,6 +98,8 @@
 .desc {
   color: rgb(95, 95, 95);
   list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .desc::first-line {

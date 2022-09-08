@@ -25,7 +25,7 @@ const desc2 = [
 const desc3 = [
   "React, ReactRouter, Jest",
   "‣ Responsive fake eCommerce site selling string instruments",
-  "‣ Shopping cart functionality -- add, delete, and update total price -- from selection pages of inventory items",
+  "‣ Shopping cart functionality (add, delete, and update total price) from selection pages of inventory items",
   "‣ Cart live updates price and selected items"
 ];
 const desc4 = [
