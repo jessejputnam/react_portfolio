@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.d59ef0de.css",
-    "main.js": "/react_portfolio/static/js/main.f17d2fba.js",
+    "main.css": "/react_portfolio/static/css/main.de06b8d6.css",
+    "main.js": "/react_portfolio/static/js/main.90fd605c.js",
     "static/media/pdf.worker.js": "/react_portfolio/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/weather.png": "/react_portfolio/static/media/weather.6be545529e023f5892e2.png",
     "static/media/pokemon.png": "/react_portfolio/static/media/pokemon.13e409f159dbec31f1fa.png",
@@ -24,11 +24,11 @@
     "static/media/firebase.svg": "/react_portfolio/static/media/firebase.82a35fc0b90d124a8e73.svg",
     "static/media/react.svg": "/react_portfolio/static/media/react.928f956d9c8ebcffb98a.svg",
     "static/media/mail.svg": "/react_portfolio/static/media/mail.7c23435981ce37c47b9b9a26d6978f65.svg",
-    "main.d59ef0de.css.map": "/react_portfolio/static/css/main.d59ef0de.css.map",
-    "main.f17d2fba.js.map": "/react_portfolio/static/js/main.f17d2fba.js.map"
+    "main.de06b8d6.css.map": "/react_portfolio/static/css/main.de06b8d6.css.map",
+    "main.90fd605c.js.map": "/react_portfolio/static/js/main.90fd605c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59ef0de.css",
-    "static/js/main.f17d2fba.js"
+    "static/css/main.de06b8d6.css",
+    "static/js/main.90fd605c.js"
   ]
 }
