@@ -1,7 +1,7 @@
 {
   "name": "react_portfolio",
   "version": "0.1.0",
-  "homepage": "https://jessejputnam.github.io/react_portfolio",
+  "homepage": "https://jessejputnam.github.io",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.3.3",
