@@ -32,13 +32,9 @@ const App = () => {
         />
         <div className={styles.pages_wrapper}>
           <Routes>
-            <Route
-              exact
-              path='/react_portfolio'
-              element={<Home menuIsOpen={isMenuOpen} />}
-            />
-            <Route path='/react_portfolio/resume' element={<Resume />} />
-            <Route path='/react_portfolio/contact' element={<Contact />} />
+            <Route exact path='/' element={<Home menuIsOpen={isMenuOpen} />} />
+            <Route path='/resume' element={<Resume />} />
+            <Route path='/contact' element={<Contact />} />
             <Route
               path='*'
               element={<PageNotFound menuIsOpen={isMenuOpen} />}

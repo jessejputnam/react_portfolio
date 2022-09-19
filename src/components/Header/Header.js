@@ -30,7 +30,7 @@ const Header = (props) => {
   };
 
   const goToPage = (e) => {
-    navigate(`/react_portfolio${e.target.id}`);
+    navigate(e.target.id);
     window.scroll({
       top: 0,
       left: 0,
