@@ -10,17 +10,18 @@ const imgs = importImgFolder(
 );
 
 const desc1 = [
+  "JS, Node, Express, MongoDB, Mongoose",
+  "‣ Fully responsive, full-stack mock storefront with inventory",
+  "‣ MVC architecture for easy extensibility",
+  "‣ Users can Create, Read, Update, and Delete items",
+  "‣ Items and categories linked for easy navigation"
+];
+const desc2 = [
   "JS, Webpack",
   "‣ Responsive application that automatically checks local weather",
   "‣ Uses OpenWeather for API calls to get weather data",
   "‣ Users can search for any city in the world and get instant weather data",
   "‣ Searches can manage homonymous cities"
-];
-const desc2 = [
-  "JS, Jest, Webpack",
-  "‣ Responsive recreation of classic boardgame Battleship: player vs computer",
-  "‣ Focus on test-driven development using Jest",
-  "‣ Players set ship position and play against computer"
 ];
 const desc3 = [
   "React, ReactRouter, Jest",
@@ -49,9 +50,10 @@ const desc6 = [
   "‣ Focus on promises, asynchronous JS, and API calls"
 ];
 const desc7 = [
-  "JS, CSS, HTML",
-  "‣ Fully responsive landing page for a fake bank",
-  "‣ Semantic HTML for structure, responsive CSS for variable viewing size, and light JavaScript for simple menu interactivity"
+  "JS, Jest, Webpack",
+  "‣ Responsive recreation of classic boardgame Battleship: player vs computer",
+  "‣ Focus on test-driven development using Jest",
+  "‣ Players set ship position and play against computer"
 ];
 const desc8 = [
   "JS, Webpack, API, Local Storage",
@@ -72,11 +74,11 @@ const Projects = (props) => {
         <Project
           styleVar='a'
           reverse={false}
-          src={imgs.weather}
-          alt='Weather App'
-          title='Weather or Not'
-          codeLink='https://github.com/jessejputnam/weather-app'
-          liveSiteLink='https://jessejputnam.github.io/weather-app/'
+          src={imgs.stringtheory}
+          alt='Inventory App'
+          title='String Theory Express'
+          codeLink='https://github.com/jessejputnam/string-theory-express'
+          liveSiteLink='https://stringtheoryexpresstest.herokuapp.com/'
           desc={desc1}
         />
       }
@@ -84,11 +86,11 @@ const Projects = (props) => {
         <Project
           styleVar='b'
           reverse={true}
-          src={imgs.battleship}
-          alt='Battleship'
-          title='Battleship'
-          codeLink='https://github.com/jessejputnam/battleship'
-          liveSiteLink='https://jessejputnam.github.io/battleship/'
+          src={imgs.weather}
+          alt='Weather App'
+          title='Weather or Not'
+          codeLink='https://github.com/jessejputnam/weather-app'
+          liveSiteLink='https://jessejputnam.github.io/weather-app/'
           desc={desc2}
         />
       }
@@ -144,11 +146,11 @@ const Projects = (props) => {
         <Project
           styleVar='g'
           reverse={false}
-          src={imgs.landing}
-          alt='Landing Page'
-          title='Fake Bank Landing Page'
-          codeLink='https://github.com/jessejputnam/fake-bank-landing'
-          liveSiteLink='https://jessejputnam.github.io/fake-bank-landing/'
+          src={imgs.battleship}
+          alt='Battleship'
+          title='Battleship'
+          codeLink='https://github.com/jessejputnam/battleship'
+          liveSiteLink='https://jessejputnam.github.io/battleship/'
           desc={desc7}
         />
       }
