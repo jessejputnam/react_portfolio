@@ -14,7 +14,6 @@ const Home = function (props) {
       <Hero />
       <Statement />
       <Projects />
-      {/* <About /> */}
     </div>
   );
 };

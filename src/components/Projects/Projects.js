@@ -30,13 +30,19 @@ const desc3 = [
   "‣ Cart live updates price and selected items"
 ];
 const desc4 = [
+  "JS, Node, Express, MongoDB, Mongoose, Passport",
+  "‣ Message board with different accessability depending on user authentication",
+  "‣ Users can submit messages for anonymous public viewing",
+  "‣ Users can view author and date of messages with premium membership"
+];
+const desc5 = [
   "JS, CSS, HTML",
   "‣ A responsive clone of the popular word guessing game, Wordle",
   "‣ Used flexbox and animations to create a smooth gameplay experience",
   "‣ Toggle dark mode palette swap",
   "‣ Focus on vanilla JavaScript DOM manipulation"
 ];
-const desc5 = [
+const desc6 = [
   "React, Flexbox, Webpack",
   "‣ A responsive CV / résumé generator",
   "‣ Users can input their information and the generator will automatically format the information presentably",
@@ -44,23 +50,16 @@ const desc5 = [
   "‣ Users can edit/delete information after submission",
   "‣ Users can hide edit buttons for printable look"
 ];
-const desc6 = [
+const desc7 = [
   "JS, Flexbox, API",
   "‣ A PokémonGo helper app that allows users to input opponent Pokemon names and ascertain effective offensive types as well as suggested Pokémon to use against opponent",
   "‣ Focus on promises, asynchronous JS, and API calls"
 ];
-const desc7 = [
+const desc8 = [
   "JS, Jest, Webpack",
   "‣ Responsive recreation of classic boardgame Battleship: player vs computer",
   "‣ Focus on test-driven development using Jest",
   "‣ Players set ship position and play against computer"
-];
-const desc8 = [
-  "JS, Webpack, API, Local Storage",
-  "‣ A classic CRUD todo app",
-  "‣ Users can add/edit/delete tasks as well as lists of tasks",
-  "‣ Tasks are tracked by date if date is provided, complete with live updates according to temporal proximity",
-  "‣ Uses Local Storage to persist user data in the browser"
 ];
 
 const Projects = (props) => {
@@ -110,11 +109,11 @@ const Projects = (props) => {
         <Project
           styleVar='d'
           reverse={true}
-          src={imgs.wordle}
-          alt='Wordle Clone'
-          title='le Word'
-          codeLink='https://github.com/jessejputnam/wordle-clone'
-          liveSiteLink='https://jessejputnam.github.io/wordle-clone/'
+          src={imgs.exclusieve}
+          alt='Messageboard'
+          title='Messageboard'
+          codeLink='https://github.com/jessejputnam/members-only'
+          liveSiteLink='https://exclusieve.herokuapp.com/'
           desc={desc4}
         />
       }
@@ -122,11 +121,11 @@ const Projects = (props) => {
         <Project
           styleVar='e'
           reverse={false}
-          src={imgs.cv}
-          alt='CV Generator'
-          title='CV Generator'
-          codeLink='https://github.com/jessejputnam/cv-project'
-          liveSiteLink='https://jessejputnam.github.io/cv-project/'
+          src={imgs.wordle}
+          alt='Wordle Clone'
+          title='le Word'
+          codeLink='https://github.com/jessejputnam/wordle-clone'
+          liveSiteLink='https://jessejputnam.github.io/wordle-clone/'
           desc={desc5}
         />
       }
@@ -134,11 +133,11 @@ const Projects = (props) => {
         <Project
           styleVar='f'
           reverse={true}
-          src={imgs.pokemon}
-          alt='Pokemon App'
-          title='Better Battle Buddy'
-          codeLink='https://github.com/jessejputnam/better-battle-buddy'
-          liveSiteLink='https://jessejputnam.github.io/better-battle-buddy/'
+          src={imgs.cv}
+          alt='CV Generator'
+          title='CV Generator'
+          codeLink='https://github.com/jessejputnam/cv-project'
+          liveSiteLink='https://jessejputnam.github.io/cv-project/'
           desc={desc6}
         />
       }
@@ -146,11 +145,11 @@ const Projects = (props) => {
         <Project
           styleVar='g'
           reverse={false}
-          src={imgs.battleship}
-          alt='Battleship'
-          title='Battleship'
-          codeLink='https://github.com/jessejputnam/battleship'
-          liveSiteLink='https://jessejputnam.github.io/battleship/'
+          src={imgs.pokemon}
+          alt='Pokemon App'
+          title='Better Battle Buddy'
+          codeLink='https://github.com/jessejputnam/better-battle-buddy'
+          liveSiteLink='https://jessejputnam.github.io/better-battle-buddy/'
           desc={desc7}
         />
       }
@@ -158,11 +157,11 @@ const Projects = (props) => {
         <Project
           styleVar='h'
           reverse={true}
-          src={imgs.todo}
-          alt='Todo App'
-          title='Due It!'
-          codeLink='https://github.com/jessejputnam/todo'
-          liveSiteLink='https://jessejputnam.github.io/todo/'
+          src={imgs.battleship}
+          alt='Battleship'
+          title='Battleship'
+          codeLink='https://github.com/jessejputnam/battleship'
+          liveSiteLink='https://jessejputnam.github.io/battleship/'
           desc={desc8}
         />
       }

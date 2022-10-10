@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 // Import Pages
 import Home from "../pages/Home/Home";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
+import EasterEgg from "../pages/easteregg/EasterEgg";
 
 // Import CSS
 import styles from "./App.module.css";
@@ -35,6 +36,7 @@ const App = () => {
             <Route exact path='/' element={<Home menuIsOpen={isMenuOpen} />} />
             <Route path='/resume' element={<Resume />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/easteregg' element={<EasterEgg />} />
             <Route
               path='*'
               element={<PageNotFound menuIsOpen={isMenuOpen} />}

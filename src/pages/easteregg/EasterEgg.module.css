@@ -1,0 +1,14 @@
+.EasterEgg {
+  margin-top: 200px;
+}
+
+.iframe {
+  box-shadow: 0 0 3px 1px;
+  border-radius: 10px;
+  height: clamp(280px, 30vw, 500px);
+  width: clamp(320px, 53vw, 800px);
+}
+
+.link {
+  cursor: pointer;
+}
