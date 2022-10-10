@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d239613.css",
-    "main.js": "/static/js/main.170fcd9b.js",
+    "main.css": "/static/css/main.05c4a35b.css",
+    "main.js": "/static/js/main.5befbb64.js",
     "static/media/pdf.worker.js": "/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/weather.png": "/static/media/weather.6be545529e023f5892e2.png",
     "static/media/stringtheory.jpg": "/static/media/stringtheory.5ede894670a12a28b459.jpg",
     "static/media/pokemon.png": "/static/media/pokemon.13e409f159dbec31f1fa.png",
+    "static/media/exclusieve.jpeg": "/static/media/exclusieve.e09d7561248866f8d416.jpeg",
     "static/media/todo.png": "/static/media/todo.cf2dc2383a62d32c6d30.png",
     "static/media/landing.png": "/static/media/landing.0ff017a83a953e52c3da.png",
     "static/media/welcome_table.jpeg": "/static/media/welcome_table.affada641d8475ac39aa.jpeg",
@@ -25,11 +26,11 @@
     "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e73.svg",
     "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a.svg",
     "static/media/mail.svg": "/static/media/mail.7c23435981ce37c47b9b9a26d6978f65.svg",
-    "main.2d239613.css.map": "/static/css/main.2d239613.css.map",
-    "main.170fcd9b.js.map": "/static/js/main.170fcd9b.js.map"
+    "main.05c4a35b.css.map": "/static/css/main.05c4a35b.css.map",
+    "main.5befbb64.js.map": "/static/js/main.5befbb64.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d239613.css",
-    "static/js/main.170fcd9b.js"
+    "static/css/main.05c4a35b.css",
+    "static/js/main.5befbb64.js"
   ]
 }
