@@ -11,29 +11,30 @@ const imgs = importImgFolder(
 
 const desc1 = [
   "JS, Node, Express, MongoDB, Mongoose",
-  "‣ Fully responsive, full-stack mock storefront with inventory",
-  "‣ MVC architecture for easy extensibility",
-  "‣ Users can Create, Read, Update, and Delete items",
-  "‣ Items and categories linked for easy navigation"
+  "‣ Fully responsive, full-stack inventory system for Pokémon trading cards",
+  "‣ Authentication system with PassportJS for secure and individual collections",
+  "‣ Users can search cards from the Pokémon TCG API and add them to their collection",
+  "‣ Users can update card market value in real time and create a timeline of value"
 ];
 const desc2 = [
+  "JS, React, ReactRouter, Jest",
+  "‣ Responsive fake eCommerce site selling string instruments",
+  "‣ Shopping cart functionality (add, delete, and update total price) from selection pages of inventory items",
+  "‣ Cart live updates price and selected items"
+];
+const desc3 = [
   "JS, Webpack",
   "‣ Responsive application that automatically checks local weather",
   "‣ Uses OpenWeather for API calls to get weather data",
   "‣ Users can search for any city in the world and get instant weather data",
   "‣ Searches can manage homonymous cities"
 ];
-const desc3 = [
-  "React, ReactRouter, Jest",
-  "‣ Responsive fake eCommerce site selling string instruments",
-  "‣ Shopping cart functionality (add, delete, and update total price) from selection pages of inventory items",
-  "‣ Cart live updates price and selected items"
-];
 const desc4 = [
-  "JS, Node, Express, MongoDB, Mongoose, Passport",
-  "‣ Message board with different accessability depending on user authentication",
-  "‣ Users can submit messages for anonymous public viewing",
-  "‣ Users can view author and date of messages with premium membership"
+  "JS, Node, Express, MongoDB, Mongoose",
+  "‣ Fully responsive, full-stack mock storefront with inventory",
+  "‣ MVC architecture for easy extensibility",
+  "‣ Users can Create, Read, Update, and Delete items",
+  "‣ Items and categories linked for easy navigation"
 ];
 const desc5 = [
   "JS, CSS, HTML",
@@ -43,19 +44,6 @@ const desc5 = [
   "‣ Focus on vanilla JavaScript DOM manipulation"
 ];
 const desc6 = [
-  "React, Flexbox, Webpack",
-  "‣ A responsive CV / résumé generator",
-  "‣ Users can input their information and the generator will automatically format the information presentably",
-  "‣ Form elements live update as user types by tying onChange to state in React components",
-  "‣ Users can edit/delete information after submission",
-  "‣ Users can hide edit buttons for printable look"
-];
-const desc7 = [
-  "JS, Flexbox, API",
-  "‣ A PokémonGo helper app that allows users to input opponent Pokemon names and ascertain effective offensive types as well as suggested Pokémon to use against opponent",
-  "‣ Focus on promises, asynchronous JS, and API calls"
-];
-const desc8 = [
   "JS, Jest, Webpack",
   "‣ Responsive recreation of classic boardgame Battleship: player vs computer",
   "‣ Focus on test-driven development using Jest",
@@ -71,55 +59,55 @@ const Projects = (props) => {
     <div className={projectsStyles}>
       {
         <Project
-          styleVar='a'
+          styleVar='e'
           reverse={false}
-          src={imgs.stringtheory}
-          alt='Inventory App'
-          title='String Theory Express'
-          codeLink='https://github.com/jessejputnam/string-theory-express'
-          liveSiteLink='https://stringtheoryexpresstest.herokuapp.com/'
+          src={imgs.cardcollector}
+          alt='Card Collection App'
+          title='Card Collector'
+          codeLink='https://github.com/jessejputnam/card-collector'
+          liveSiteLink='https://card-collector.onrender.com/'
           desc={desc1}
         />
       }
       {
         <Project
-          styleVar='b'
-          reverse={true}
-          src={imgs.weather}
-          alt='Weather App'
-          title='Weather or Not'
-          codeLink='https://github.com/jessejputnam/weather-app'
-          liveSiteLink='https://jessejputnam.github.io/weather-app/'
-          desc={desc2}
-        />
-      }
-      {
-        <Project
           styleVar='c'
-          reverse={false}
+          reverse={true}
           src={imgs.cart}
           alt='React Shopping Cart'
           title='Modal Shopping Cart'
           codeLink='https://github.com/jessejputnam/shopping-cart'
           liveSiteLink='https://jessejputnam.github.io/shopping-cart/'
+          desc={desc2}
+        />
+      }
+      {
+        <Project
+          styleVar='b'
+          reverse={false}
+          src={imgs.weather}
+          alt='Weather App'
+          title='Weather or Not'
+          codeLink='https://github.com/jessejputnam/weather-app'
+          liveSiteLink='https://jessejputnam.github.io/weather-app/'
           desc={desc3}
         />
       }
       {
         <Project
-          styleVar='d'
+          styleVar='a'
           reverse={true}
-          src={imgs.exclusieve}
-          alt='Messageboard'
-          title='Messageboard'
-          codeLink='https://github.com/jessejputnam/members-only'
-          liveSiteLink='https://exclusieve.herokuapp.com/'
+          src={imgs.stringtheory}
+          alt='Inventory App'
+          title='String Theory Express'
+          codeLink='https://github.com/jessejputnam/string-theory-express'
+          liveSiteLink='https://stringtheoryexpresstest.herokuapp.com/'
           desc={desc4}
         />
       }
       {
         <Project
-          styleVar='e'
+          styleVar='f'
           reverse={false}
           src={imgs.wordle}
           alt='Wordle Clone'
@@ -131,38 +119,14 @@ const Projects = (props) => {
       }
       {
         <Project
-          styleVar='f'
-          reverse={true}
-          src={imgs.cv}
-          alt='CV Generator'
-          title='CV Generator'
-          codeLink='https://github.com/jessejputnam/cv-project'
-          liveSiteLink='https://jessejputnam.github.io/cv-project/'
-          desc={desc6}
-        />
-      }
-      {
-        <Project
           styleVar='g'
-          reverse={false}
-          src={imgs.pokemon}
-          alt='Pokemon App'
-          title='Better Battle Buddy'
-          codeLink='https://github.com/jessejputnam/better-battle-buddy'
-          liveSiteLink='https://jessejputnam.github.io/better-battle-buddy/'
-          desc={desc7}
-        />
-      }
-      {
-        <Project
-          styleVar='h'
           reverse={true}
           src={imgs.battleship}
           alt='Battleship'
           title='Battleship'
           codeLink='https://github.com/jessejputnam/battleship'
           liveSiteLink='https://jessejputnam.github.io/battleship/'
-          desc={desc8}
+          desc={desc6}
         />
       }
     </div>
