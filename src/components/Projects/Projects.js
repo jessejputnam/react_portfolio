@@ -101,7 +101,7 @@ const Projects = (props) => {
           alt='Inventory App'
           title='String Theory Express'
           codeLink='https://github.com/jessejputnam/string-theory-express'
-          liveSiteLink='https://stringtheoryexpresstest.herokuapp.com/'
+          liveSiteLink='https://string-theory-express.onrender.com/'
           desc={desc4}
         />
       }
