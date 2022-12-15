@@ -31,6 +31,10 @@ const Statement = () => {
           <Skill skillImg={langs.html} skillName='HTML5' />
           <Skill skillImg={langs.css} skillName='CSS3' />
           <Skill skillImg={langs.js} skillName='JavaScript' />
+          <Skill
+            skillImg='https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg'
+            skillName='TypeScript'
+          />
           <Skill skillImg={langs.react} skillName='React' />
           <Skill skillImg={langs.node} skillName='Node' />
           <Skill skillImg={langs.express} skillName='Express' />
@@ -41,6 +45,10 @@ const Statement = () => {
           <Skill skillImg={langs.html} skillName='HTML5' />
           <Skill skillImg={langs.css} skillName='CSS3' />
           <Skill skillImg={langs.js} skillName='JavaScript' />
+          <Skill
+            skillImg='https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg'
+            skillName='TypeScript'
+          />
           <Skill skillImg={langs.react} skillName='React' />
           <Skill skillImg={langs.node} skillName='Node' />
           <Skill skillImg={langs.express} skillName='Express' />
