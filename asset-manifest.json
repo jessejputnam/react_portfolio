@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.05c4a35b.css",
-    "main.js": "/static/js/main.1bbd4ca5.js",
+    "main.js": "/static/js/main.ad98cafc.js",
     "static/media/pdf.worker.js": "/static/media/pdf.worker.5a4781656f64092ca08b.js",
     "static/media/weather.png": "/static/media/weather.6be545529e023f5892e2.png",
     "static/media/cardcollector.jpg": "/static/media/cardcollector.e036e02a07a929071bd1.jpg",
@@ -10,7 +10,7 @@
     "static/media/cart.png": "/static/media/cart.0b7b1cdb00ab44035909.png",
     "static/media/wordle.png": "/static/media/wordle.abe5d6dbe97f5c68153d.png",
     "static/media/battleship.jpeg": "/static/media/battleship.08e1e4596c6eb2e9c506.jpeg",
-    "static/media/resume.pdf": "/static/media/resume.5ae20be042cdad18c6b8.pdf",
+    "static/media/resume.pdf": "/static/media/resume.35733e6a0961e2e4fe28.pdf",
     "static/media/signature.png": "/static/media/signature.ec224f96f198a9240fb8.png",
     "static/media/js.svg": "/static/media/js.2dbde6137d0349e2914d.svg",
     "static/media/node.svg": "/static/media/node.d8f307027efc26c86b25.svg",
@@ -23,10 +23,10 @@
     "static/media/react.svg": "/static/media/react.928f956d9c8ebcffb98a.svg",
     "static/media/mail.svg": "/static/media/mail.7c23435981ce37c47b9b9a26d6978f65.svg",
     "main.05c4a35b.css.map": "/static/css/main.05c4a35b.css.map",
-    "main.1bbd4ca5.js.map": "/static/js/main.1bbd4ca5.js.map"
+    "main.ad98cafc.js.map": "/static/js/main.ad98cafc.js.map"
   },
   "entrypoints": [
     "static/css/main.05c4a35b.css",
-    "static/js/main.1bbd4ca5.js"
+    "static/js/main.ad98cafc.js"
   ]
 }
