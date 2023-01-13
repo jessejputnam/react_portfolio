@@ -1,6 +1,5 @@
 .Header {
-  /* margin-left: 3px; */
-  width: 101%;
+  width: 100%;
   position: fixed;
   background-color: white;
   backdrop-filter: blur(4px);
@@ -29,19 +28,19 @@ header {
 }
 
 .social_img {
-  transition: color 0.8s, font-size 0.3s;
+  transition: color 0.4s;
   color: rgb(99, 98, 98);
 }
 
 @media (hover: hover) {
   .social_img:hover {
     color: #e76f51;
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
   }
 }
 
 .desktop_nav {
-  width: 30%;
+  width: 40%;
   min-width: 275px;
   display: flex;
   justify-content: space-between;

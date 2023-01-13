@@ -84,6 +84,13 @@ const Header = (props) => {
           <button onClick={goToPage} id='/resume'>
             Resumé
           </button>
+          <a
+            href='https://sisypheaninsights.com/'
+            rel='noreferrer'
+            target='_blank'
+          >
+            <button>Blog</button>
+          </a>
           <button onClick={goToPage} id='/contact'>
             Contact
           </button>

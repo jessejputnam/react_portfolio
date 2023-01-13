@@ -26,6 +26,14 @@ const NavMenu = (props) => {
         <button onClick={getNav} id='/resume'>
           Resumé
         </button>
+        <a
+          href='https://sisypheaninsights.com/'
+          rel='noreferrer'
+          target='_blank'
+          style={{ margin: "0 auto" }}
+        >
+          <button>Blog</button>
+        </a>
         <button onClick={getNav} id='/contact'>
           Contact
         </button>
