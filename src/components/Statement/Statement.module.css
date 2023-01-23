@@ -23,7 +23,7 @@
   justify-content: space-around;
   min-width: 100%;
   gap: 1rem;
-  animation: scroll 15s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
